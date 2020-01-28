@@ -1,0 +1,178 @@
+body {
+    padding: 0px;
+    border: 0px;
+    box-sizing: content-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.fnt_esp {
+    font-family: 'Bitter', serif;
+}
+
+.header_headline {
+    font-size: 48px;
+}
+
+.header .hero .hero-body .title {
+    color: #141c3a;
+}
+
+.header .hero .hero-body .container h1 {
+    margin-bottom: 50px;
+}
+
+/* SOBRE */
+
+.about {
+    padding: 0px !important;
+    color: white;
+}
+
+.about .container {
+    min-width: 100% !important;
+    margin: 0px !important;
+}
+
+.about .columns:nth-child(2) {
+    background-color: #7510F7;
+    color: #fff;
+    padding: 2.5rem 0px;
+}
+
+.about .columns:nth-child(2) .title {
+    color: white;
+    margin-bottom: 35px;
+}
+
+.about .columns:nth-child(2) .subtitle {
+    color: white;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* Skills */
+
+section.skills {
+    background: linear-gradient(#7510F7 50%, white 0px);
+}
+
+.skills figure.image {
+    width: 48px;
+    display: inline-block;
+    margin-bottom: 1em !important;
+}
+
+/* Works */
+
+.works {
+    --works-opacity: 0;
+}
+
+.works .grid-projeto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-gap: 15px;
+}
+
+.works img.project-thumb {
+    border-radius: 25px;
+}
+
+.works .grid-projeto .item {
+    position: sticky;
+    width: 100%;
+    height: 250px;
+}
+
+.works .grid-projeto .item img {
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.works .grid-projeto .item .conteudo {
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.35s;
+    border-radius: 10px;
+}
+
+.works .grid-projeto .item .conteudo .subtitle {
+    padding: 10px 20px;
+    color: white;
+}
+
+.works .grid-projeto .item .conteudo:hover {
+    background: rgb(116, 54, 247, 0.9);
+    opacity: 1;
+}
+
+.works .item .conteudo .subtitle {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.works .item .conteudo .botao {
+    height: 30px;
+    display: inline-flex;
+    border: solid 2px white;
+    border-radius: 100px;
+    padding: 5px 20px;
+    align-items: center;
+    font-weight: 700;
+    color: white;
+    transition: 1s;
+}
+
+.works .item .conteudo .botao a {
+    color: white;
+}
+
+.works figcaption {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.works figcaption:hover {
+    opacity: 0.9;
+}
+
+/* Efeitos */
+
+/* social */
+
+.social-icon {
+    display: inline-flex;
+    padding: 10px 12px;
+    border-radius: 50px;
+    border: solid 1px black;
+    margin-left: 15px;
+    transition: 0.2s;
+}
+
+.social-icon:hover {
+    padding: 14px 16px;
+    background-color: blueviolet;
+    color: white;
+}
+
+@keyframes fadeInDown {
+    from {
+        font-size: 0px;
+    }
+    to {
+        font-size: 24px;
+    }
+}
+
+/* .works figcaption {
+    opacity: var(--works-opacity);
+} */
