@@ -21,6 +21,11 @@ body {
     margin-bottom: 50px;
 }
 
+
+.content-banner{
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
 /* SOBRE */
 
 .about {
@@ -227,6 +232,9 @@ footer .title{
 /* MOBILE */
 @media only screen and (max-width: 768px) {
 
+    .columns{
+        margin-right: 0px !important;
+    }
     /* menu */
     #navMenu > div.navbar-end > div > a{
         padding: 0px 15px;
@@ -235,6 +243,15 @@ footer .title{
     .header .hero .hero-body .container h1{
         font-size: 28px;
     }
+
+    .content-banner{
+        margin-top: 2rem;
+        margin-bottom: 0rem; 
+    }
+    .content-banner img{
+       width: 260px;
+    }
+
 
     body > div > div > div > section > div > div > div > img{
         width: 200px;
@@ -256,6 +273,10 @@ footer .title{
         padding: 13px;
     }
 
+    body > section.section.is-medium.is-primary.has-text-centered.is-long.about > div > div:nth-child(1) > img{
+        max-width: 340px;
+    }
+
     /* skulls */
 
     /* portfolio */
@@ -274,6 +295,10 @@ footer .title{
 
     body > section.section.project.call-to-action.is-primary.has-text-centered > div > div > div > div:nth-child(2) > p{
         padding: 20px;
+    }
+
+    .works .grid-projeto .item .conteudo .subtitle{
+        padding: 5px 15px;   
     }
 
 
